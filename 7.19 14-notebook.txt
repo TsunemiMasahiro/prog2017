@@ -1,0 +1,62 @@
+import title
+t = turtle.Turle()
+
+t.home()
+t.clear()
+
+t.forward(100)
+t.left(90)
+t.forward(100)
+
+def rect(x,y,a):
+ t.up()
+ t.home()
+ t.forward(x)
+ t.left(90)
+ t.forward(y)
+ t.down()
+ for i in range(4):
+   t.forward(a)
+   t.left(-90)
+#空白 
+
+t.clear()
+rect(10, 10, 100)
+rect(10, -110, 100)
+rect(-110, 10, 100)
+rect(-110, -110, 100)
+
+問題168
+import random
+aDice = Dice()#クラスをもとにオブジェクトを作る
+aDice.shoot()#オブジェクトを使う
+
+class Dice:
+　　face_num = 6
+　　def shoot(self):
+　　　　return random.randint(1, self.face_num)
+
+問題169
+class Dice:
+  def __init__(self, val):
+   self.face_num = val
+  def shoot(self):
+   return random.randint(1, self.face_num)
+n面体のさいころをつくる
+
+問題170
+問題171新しいデータ型の定義は(class)キーワードではじめます
+問題172メソッドを追加する場合は，1つ目の引数に必ず(self)を指定します。（教科書
+）問題173初期化メソッドの実体は，(__int__)という名前のメソッドです。
+
+
+
+
+
+
+
+
+
+
+
+
